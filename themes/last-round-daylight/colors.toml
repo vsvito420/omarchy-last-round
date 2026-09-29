@@ -1,0 +1,38 @@
+mode = "light"
+
+# last-round-daylight2
+# Deutan-friendly on a light background: red is a crimson (reads bluish to
+# deutan eyes) and yellow an olive gold, so they never collapse into the same
+# brown; errors vs additions stay crimson vs teal. All syntax colors >= 4.5:1.
+accent = "#b8480e"
+selection = "#cfdcf2"
+muted = "#6d747d"
+
+background = "#f6f7f9"
+dark_background = "#eceef1"
+darker_background = "#e1e4e9"
+lighter_background = "#ffffff"
+
+foreground = "#16191e"
+dark_foreground = "#454c56"
+light_foreground = "#262b32"
+bright_foreground = "#000000"
+
+red = "#b8214a"
+yellow = "#5f5400"
+orange = "#b8480e"
+green = "#0b6e58"
+cyan = "#08697f"
+blue = "#2458b8"
+magenta = "#8a3a96"
+brown = "#7a5433"
+
+bright_red = "#d0305c"
+bright_yellow = "#766a00"
+bright_green = "#128a6e"
+bright_cyan = "#0a7f99"
+bright_blue = "#3a6fd0"
+bright_magenta = "#a04cad"
+
+hyprland_active_border = "rgba(b8480eee) rgba(7a543388) 90deg"
+hyprland_inactive_border = "rgba(9aa3b0aa)"

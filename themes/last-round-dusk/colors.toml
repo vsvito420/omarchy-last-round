@@ -1,0 +1,37 @@
+mode = "dark"
+
+# Last Round Dusk — the same cold tactical look, lifted out of the dark:
+# graphite instead of gunmetal, for rooms with more light. Deutan-friendly
+# like the base theme: signals run on blue vs orange/gold.
+accent = "#de9b35"
+selection = "#333b4a"
+muted = "#737b86"
+
+background = "#1c2026"
+dark_background = "#16191e"
+darker_background = "#111418"
+lighter_background = "#252a31"
+
+foreground = "#cfd3d8"
+dark_foreground = "#9399a2"
+light_foreground = "#dde0e4"
+bright_foreground = "#f4f5f7"
+
+red = "#ef5a3c"
+yellow = "#f2d45c"
+orange = "#de9b35"
+green = "#3cc8a0"
+cyan = "#86c4e4"
+blue = "#7b9ade"
+magenta = "#c287bc"
+brown = "#8a6a45"
+
+bright_red = "#ff7a5c"
+bright_yellow = "#ffe487"
+bright_green = "#6fdcbc"
+bright_cyan = "#aad8f0"
+bright_blue = "#9db3e6"
+bright_magenta = "#d6a2cf"
+
+hyprland_active_border = "rgba(de9b35ee) rgba(8a6a4588) 90deg"
+hyprland_inactive_border = "rgba(333b4aaa)"

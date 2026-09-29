@@ -7,6 +7,25 @@ more than it needs to.
 
 ![Preview](themes/last-round/preview.png)
 
+## Four brightness levels
+
+| Variant | Mode | Background | For |
+| --- | --- | --- | --- |
+| **Last Round** | dark | `#0f1114` gunmetal | night, dark rooms |
+| **Last Round Dusk** | dark | `#1c2026` graphite | evenings, less contrast strain |
+| **Last Round Overcast** | light | `#e0e3e7` flat grey | daylight, low glare |
+| **Last Round Daylight** | light | `#f6f7f9` near-white | bright rooms, sunlight |
+
+| Dusk | Overcast | Daylight |
+| --- | --- | --- |
+| ![Dusk](themes/last-round-dusk/preview.png) | ![Overcast](themes/last-round-overcast/preview.png) | ![Daylight](themes/last-round-daylight/preview.png) |
+
+On light backgrounds dark yellow turns olive-brown and looks like dark red to
+deutan eyes. The light variants therefore use a crimson red and an olive gold,
+which stay apart, with every syntax color at 4.5:1 or more.
+
+## Features
+
 - **Deutan-friendly palette.** Meaning never rests on red vs green alone. The
   main signal axis is blue vs orange/gold, which survives red-green color
   blindness. Errors are a vermilion and additions a bluish teal, so they differ
@@ -24,7 +43,20 @@ more than it needs to.
 - **Smoked glass shell.** Light blur behind the bar, menus and notifications.
 - **Three original wallpapers:** fog over a tactical grid, a dim radar, and a
   dust-orange horizon under a cold sky.
-- Matching Chromium / Chrome toolbar color and a dark Yaru icon set.
+- Matching Chromium / Chrome toolbar color and Yaru icons.
+
+## Recommended font
+
+[Atkinson Hyperlegible Mono](https://www.brailleinstitute.org/freefont/), made
+by the Braille Institute for maximum legibility: every glyph is clearly distinct
+(`0 O`, `1 l I`, `rn m`) and the shapes are calm, with little visual noise. It
+pairs well with the theme for long, focused sessions. Omarchy sets fonts
+system-wide rather than per theme:
+
+```bash
+omarchy pkg add otf-atkinsonhyperlegiblemono-nerd
+omarchy font set "AtkynsonMono Nerd Font Mono"
+```
 
 ## Install
 
@@ -32,7 +64,7 @@ more than it needs to.
 git clone https://github.com/vsvito420/omarchy-last-round.git
 cd omarchy-last-round
 ./install.sh
-omarchy theme set "Last Round"
+omarchy theme set "Last Round"   # or Dusk / Overcast / Daylight
 ```
 
 `install.sh` copies the theme into `~/.config/omarchy/themes`, builds the
@@ -49,7 +81,7 @@ Remove everything again with `./install.sh --remove`.
 > loads after the theme and overrides it. Remove rounding, opacity and blur
 > settings from there to let the theme decide.
 
-## Palette
+## Palette (Last Round)
 
 | Role | Color | Role | Color |
 | --- | --- | --- | --- |
@@ -64,8 +96,8 @@ Remove everything again with `./install.sh --remove`.
 ## Rebuilding the assets
 
 ```bash
-tools/make-backgrounds.sh   # wallpapers (ImageMagick, fixed seeds)
-tools/make-preview.py       # preview.png
+tools/make-backgrounds.sh   # wallpapers for all variants (ImageMagick, fixed seeds)
+tools/make-preview.py       # preview.png for every variant, from its colors.toml
 cursor/build.py <dir>       # crosshair XCursor theme from the SVGs
 ```
 

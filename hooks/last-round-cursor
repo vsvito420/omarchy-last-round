@@ -6,7 +6,7 @@
 theme=${1:-$(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null)}
 size=${XCURSOR_SIZE:-24}
 
-if [[ $theme == last-round ]]; then
+if [[ $theme == last-round || $theme == last-round-* ]]; then
   cursor=LastRound-Crosshair
 else
   cursor=default

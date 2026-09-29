@@ -1,0 +1,42 @@
+mode = "dark"
+
+# Last Round — tactical, cold and quiet. Valve-style restraint:
+# gunmetal surfaces, fog-grey text, one gold accent.
+#
+# Deutan-friendly: meaning never rests on red vs green alone.
+# The main signal axis is blue (CT) vs orange/gold (T), which survives
+# red-green color blindness. "red" is a vermilion and "green" a bluish
+# teal, so errors and additions differ in hue AND lightness.
+accent = "#de9b35"
+selection = "#2a3140"
+muted = "#5f6670"
+
+background = "#0f1114"
+dark_background = "#0b0d0f"
+darker_background = "#07080a"
+lighter_background = "#181b20"
+
+foreground = "#c5c9cf"
+dark_foreground = "#8a9099"
+light_foreground = "#d6d9de"
+bright_foreground = "#f2f3f5"
+
+red = "#ef5a3c"
+yellow = "#f2d45c"
+orange = "#de9b35"
+green = "#3cc8a0"
+cyan = "#86c4e4"
+blue = "#6f8fd0"
+magenta = "#b67ab0"
+brown = "#8a6a45"
+
+bright_red = "#ff7a5c"
+bright_yellow = "#ffe487"
+bright_green = "#6fdcbc"
+bright_cyan = "#aad8f0"
+bright_blue = "#93acdf"
+bright_magenta = "#cf9bc9"
+
+# Gold edge on the focused window, near-invisible steel on the rest.
+hyprland_active_border = "rgba(de9b35ee) rgba(8a6a4588) 90deg"
+hyprland_inactive_border = "rgba(2a3140aa)"

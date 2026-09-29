@@ -1,0 +1,17 @@
+#!/bin/bash
+# Last Round: crosshair cursor while the theme is active, the normal cursor
+# otherwise. Installed as a theme-set hook (theme slug in $1) and a post-boot
+# hook (no argument, so read the current theme instead).
+
+theme=${1:-$(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null)}
+size=${XCURSOR_SIZE:-24}
+
+if [[ $theme == last-round ]]; then
+  cursor=LastRound-Crosshair
+else
+  cursor=default
+fi
+
+hyprctl setcursor "$cursor" "$size" >/dev/null
+gsettings set org.gnome.desktop.interface cursor-theme "$cursor" 2>/dev/null
+exit 0

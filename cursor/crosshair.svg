@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Classic four-line crosshair with a centre gap. Dark outline first so it
+       stays visible on light and dark backgrounds alike. -->
+  <g stroke="#07080a" stroke-width="6.5" stroke-linecap="square" opacity="0.85">
+    <path d="M32 8v15M32 41v15M8 32h15M41 32h15"/>
+  </g>
+  <g stroke="#f2f3f5" stroke-width="3" stroke-linecap="square">
+    <path d="M32 8v15M32 41v15M8 32h15M41 32h15"/>
+  </g>
+</svg>
